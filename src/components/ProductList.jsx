@@ -5,47 +5,51 @@ import ProductCard from './ProductCard';
 const products = [
     {
         id: 1,
-        name: 'Gato calvo',
-        imagenUrl: 'https://th.bing.com/th/id/OIP.PSLdHB1heH2uk7wITn2L3gAAAA?rs=1&pid=ImgDetMain',
-        percentageOffer: '30',
-        newPrice: '160',
-        oldPrice: '208',
-        introduction: 'Un gato calvo muy especial',
-        availability: 'In Stock',
-        description: 'Un gato calvo muy especial que te hará compañía en todo momento.',
+        name: 'Miel',
+        imagenUrl: 'https://www.diariodesevilla.es/2023/03/05/mascotas/curiosidades-gatos-naranja-unicos-especie_1771932936_178438200_1200x675.png',
+        introduction: 'Una gatita naranja muy especial',
+        availability: 'Disponible',
+        description: 'Una gatita naranja muy especial que te hará compañía en todo momento. Es Hembra. Es un gato muy cariñoso y juguetón. ¡Adoptala ya!',
     },
     {
         id: 2,
-        name: 'Gato siames',
-        imagenUrl: 'https://i.pinimg.com/736x/4d/20/61/4d2061f62c34e13fea9cb63435152c11.jpg',
-        percentageOffer: '20',
-        newPrice: '200',
-        oldPrice: '250',
-        introduction: 'Un gato siames elegante',
-        availability: 'In Stock',
-        description: 'Un gato siames elegante que te hará compañía en todo momento.',
+        name: 'Pixel',
+        imagenUrl: 'https://s.yimg.com/ny/api/res/1.2/4Tzx_f3_p3pQfLZtIOXUng--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2022-09/e4488eb0-3f74-11ed-bfbc-4db5b337addb',
+        introduction: 'Un gato calico elegante',
+        availability: 'Disponible',
+        description: 'Un gato tricolor elegante que te hará compañía en todo momento. Es macho. Es un gato muy cariñoso y sumamente tranquilo. Le encanta dormir en las piernas de la persona que ama. ¡Adoptalo ya!',
     },
     {
         id: 3,
-        name: 'Gato persa',
-        imagenUrl: 'https://th.bing.com/th?id=OIF.O4B%2b%2faXCoEFkohyGlgZBoA&rs=1&pid=ImgDetMain',
-        percentageOffer: '10',
-        newPrice: '300',
-        oldPrice: '350',
-        introduction: 'Un gato persa hermoso',
-        availability: 'In Stock',
-        description: 'Un gato persa hermoso que te hará compañía en todo momento.',
+        name: 'Oreo',
+        imagenUrl: 'https://th.bing.com/th/id/R.cec894e4259a5e1e5870f923f52abb90?rik=4mZBCbiUzc%2f5Ew&riu=http%3a%2f%2fwww.osgatos.com.br%2ffotos%2fgato-peludo.jpg&ehk=D%2fqibt7hIfAt262vbhIfXoqe6MD7yxo%2f9E3HE7eKuRA%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1',
+        introduction: 'Un gato bicolor hermoso',
+        availability: 'Disponible',
+        description: 'Un gato bicolor hermoso que te hará compañía en todo momento. Es macho, y le encantan los niños. Le gusta mucho las caricias y tener tu atención. ¡Adoptalo ya!',
     },
     {
         id: 4,
-        name: 'Gato egipcio',
-        imagenUrl: 'https://th.bing.com/th/id/R.1c9184888ead79b94d2f597f63ac26f1?rik=LnRO4OhkK8y4ww&riu=http%3a%2f%2fimages3.memedroid.com%2fimages%2fUPLOADED661%2f611feaeb38dd2.jpeg&ehk=vMqMhKOI1UtMRNtl%2f4eoFCZazYJ0T%2f67RpRlN8VK9j4%3d&risl=&pid=ImgRaw&r=0',
-        percentageOffer: '15',
-        newPrice: '400',
-        oldPrice: '450',
-        introduction: 'Un gato egipcio majestuoso',
-        availability: 'In Stock',
-        description: 'Un gato egipcio majestuoso que te hará compañía en todo momento.',
+        name: 'Tiggy',
+        imagenUrl: 'https://thumbs.dreamstime.com/b/gato-rayado-gris-11405616.jpg',
+        introduction: 'Una gatita tigresa majestuosa',
+        availability: 'Disponible',
+        description: 'Un gatita con rayas en su cuerpo que te hará compañía en todo momento. Le encanta estar en actividad, corriendo y sacando todas sus energías, nunca te aburrirás a su lado. Es muy tierna y cariñosa. ¡Adoptala ya!',
+    },
+    {
+        id: 5,
+        name: 'Nube',
+        imagenUrl: 'https://th.bing.com/th/id/OIP.mlAZ5oSA1rmSGq3hwEAm8AAAAA?rs=1&pid=ImgDetMain',
+        introduction: 'Un gato blanco majestuoso',
+        availability: 'Disponible',
+        description: 'Un gato blanco con pelaje majestuoso que te hará compañía en todo momento. Su pelaje es tan esponjoso que te sentirás acariciando una nube. Le gusta estar acompañado, es muy cariñoso y siempre querrá que lo abraces. ¡Adoptalo ya!',
+    },
+    {
+        id: 6,
+        name: 'Pantera',
+        imagenUrl: 'https://gatoyfelino.com/wp-content/uploads/2020/12/black-cat-375866_1280.jpg',
+        introduction: 'Un gata negra majestuoso',
+        availability: 'Disponible',
+        description: 'Una gatita con pelaje exhuberante y negro que te hará compañía en todo momento. Le encanta dormir con las personas, es muy tierna y sabe tratar con niños. ¡Adoptala ya!',
     },
 ];
 
@@ -65,9 +69,9 @@ const ProductList = () => {
                     key={product.id}
                     name={product.name}
                     imagenUrl={product.imagenUrl}
-                    percentageOffer={product.percentageOffer}
-                    newPrice={product.newPrice}
-                    oldPrice={product.oldPrice}
+                    //percentageOffer={product.percentageOffer}
+                    //newPrice={product.newPrice}
+                    //oldPrice={product.oldPrice}
                     onProductClick={() => handleProductClick(product)}
                 />
             ))}

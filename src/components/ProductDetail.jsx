@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
+import ProductList from './ProductList';
 
 const ProductDetail = () => {
     const location = useLocation();
@@ -18,10 +19,10 @@ const ProductDetail = () => {
                         </div>
                         <div class="flex -mx-2 mb-4">
                             <div class="w-1/2 px-2">
-                                <button class="w-full bg-gray-900 dark:bg-gray-600 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-700">Add to Cart</button>
+                                <button class="w-full bg-gray-900 dark:bg-gray-600 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-700">Adoptar</button>
                             </div>
                             <div class="w-1/2 px-2">
-                                <button class="w-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white py-2 px-4 rounded-full font-bold hover:bg-gray-300 dark:hover:bg-gray-600">Add to Wishlist</button>
+                                <button class="w-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white py-2 px-4 rounded-full font-bold hover:bg-gray-300 dark:hover:bg-gray-600">Agregar a Favorito</button>
                             </div>
                         </div>
                     </div>
@@ -31,36 +32,14 @@ const ProductDetail = () => {
                             {product.introduction}
                         </p>
                         <div class="flex mb-4">
-                            <div class="mr-4">
-                                <span class="font-bold text-gray-700 dark:text-gray-300">Price:</span>
-                                <span class="text-gray-600 dark:text-gray-300"> $ {product.newPrice}</span>
-                            </div>
+
                             <div>
-                                <span class="font-bold text-gray-700 dark:text-gray-300">Availability:</span>
+                                <span class="font-bold text-gray-700 dark:text-gray-300">Estado:</span>
                                 <span class="text-gray-600 dark:text-gray-300"> {product.availability}</span>
                             </div>
                         </div>
-                        <div class="mb-4">
-                            <span class="font-bold text-gray-700 dark:text-gray-300">Select Color:</span>
-                            <div class="flex items-center mt-2">
-                                <button class="w-6 h-6 rounded-full bg-gray-800 dark:bg-gray-200 mr-2"></button>
-                                <button class="w-6 h-6 rounded-full bg-red-500 dark:bg-red-700 mr-2"></button>
-                                <button class="w-6 h-6 rounded-full bg-blue-500 dark:bg-blue-700 mr-2"></button>
-                                <button class="w-6 h-6 rounded-full bg-yellow-500 dark:bg-yellow-700 mr-2"></button>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <span class="font-bold text-gray-700 dark:text-gray-300">Select Size:</span>
-                            <div class="flex items-center mt-2">
-                                <button class="bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-white py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600">S</button>
-                                <button class="bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-white py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600">M</button>
-                                <button class="bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-white py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600">L</button>
-                                <button class="bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-white py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600">XL</button>
-                                <button class="bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-white py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600">XXL</button>
-                            </div>
-                        </div>
                         <div>
-                            <span class="font-bold text-gray-700 dark:text-gray-300">Descripcion del producto:</span>
+                            <span class="font-bold text-gray-700 dark:text-gray-300">Descripcion del gatito:</span>
                             <p class="text-gray-600 dark:text-gray-300 text-sm mt-2">
                                 {product.description}
                             </p>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import logo from '../assets/LogoMiaw.png';
 
 
 function Footer() {
@@ -10,6 +11,7 @@ function Footer() {
 
                 <div class="sm:col-span-2">
                     <a href="#" class="inline-flex items-center">
+                        <img src={logo} class="h-8" alt="Logo" />  
                         <img src="https://mcqmate.com/public/images/logos/60x60.png" alt="logo" class="h-8 w-8" />
                         <span class="ml-2 text-xl font-bold tracking-wide text-gray-800">Miaw</span>
                     </a>
