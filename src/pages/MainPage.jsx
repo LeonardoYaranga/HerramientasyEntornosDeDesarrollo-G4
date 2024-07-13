@@ -1,4 +1,6 @@
 import React from 'react'
+import ProductCard from '../components/ProductCard'
+import ProductList from '../components/ProductList'
 
 function MainPage() {
     return (
@@ -89,6 +91,7 @@ function MainPage() {
             </div>
 
             </section>
+           <ProductList />
         </div>
       )
 }

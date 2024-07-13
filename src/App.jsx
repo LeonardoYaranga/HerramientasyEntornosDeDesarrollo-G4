@@ -4,6 +4,7 @@ import Galery from './components/Galery.jsx';
 import Header from './components/Header.jsx';
 import MainPage from './pages/MainPage.jsx';
 import FormContacto from './components/FormContacto.jsx';
+import ProductDetail from './components/ProductDetail.jsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -12,6 +13,8 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<MainPage />} />
+        <Route path="/product/:id" element={<ProductDetail/>} />
+
         <Route path="/galeria" element={<Galery/>} />
         <Route path="/contacto" element={<FormContacto />} />
       </Routes>
